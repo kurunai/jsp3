@@ -1,0 +1,12 @@
+package domain;
+
+public class MemberVO {
+	private String id;
+	private String password;
+	private String email;
+	private int age;
+	
+	public MemberVO() {}
+	
+	
+}

@@ -1,0 +1,40 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Board Detail Page</h1>
+	<table border="1">
+		<tr>
+			<th>Bno</th>
+			<td>${bvo.bno }</td>
+		</tr>
+		<tr>
+			<th>Title</th>
+			<td>${bvo.title }</td>
+		</tr>
+		<tr>
+			<th>Writer</th>
+			<td>${bvo.writer }</td>
+		</tr>
+		<tr>
+			<th>Reg_date</th>
+			<td>${bvo.reg_date }</td>
+		</tr>
+		<tr>
+			<th>Content</th>
+			<td>${bvo.content }</td>
+		</tr>
+	</table>
+	<a href="/brd/modify?bno=${bvo.bno }">modify</a>
+	<a href="/brd/remove?bno=${bvo.bno }">delete</a>
+	<a href="/brd/list">list</a>
+</body>
+</html>

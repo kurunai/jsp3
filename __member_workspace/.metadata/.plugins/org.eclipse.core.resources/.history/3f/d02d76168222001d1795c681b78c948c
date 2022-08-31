@@ -1,0 +1,23 @@
+package orm;
+
+import java.sql.Connection;
+
+import org.apache.ibatis.session.Configuration;
+import org.apache.ibatis.session.ExecutorType;
+import org.apache.ibatis.session.SqlSession;
+import org.apache.ibatis.session.SqlSessionFactory;
+import org.apache.ibatis.session.TransactionIsolationLevel;
+
+public class DatabaseBuilder {
+	private static SqlSessionFactory factory;
+	
+	static {
+		try {
+			factory = new SqlSessionFactoryBuilder().build(Resourcse.
+					getResourceAsReader("orm/MybatisConfig.xml")); 
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

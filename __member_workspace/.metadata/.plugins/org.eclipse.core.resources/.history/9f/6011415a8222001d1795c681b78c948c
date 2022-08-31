@@ -1,0 +1,15 @@
+package orm;
+
+public class DatabaseBuilder {
+	private static SqlSessionFactory factory;
+	
+	static {
+		try {
+			factory = new SqlSessionFactoryBuilder().build(Resourcse.
+					getResourceAsReader("orm/MybatisConfig.xml")); 
+
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+}

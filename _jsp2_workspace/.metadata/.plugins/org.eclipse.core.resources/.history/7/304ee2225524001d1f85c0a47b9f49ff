@@ -1,0 +1,12 @@
+package service;
+
+import repository.MemberDAOImpl;
+import repository.MemberDao;
+
+public class MemberServiceImpl implements MemberService {
+	private MemberDao mdao;
+	
+	public MemberServiceImpl() {
+		mdao = new MemberDAOImpl();
+	}
+}

@@ -1,0 +1,14 @@
+package orm;
+
+import org.apache.ibatis.session.SqlSessionFactory;
+
+public class DatabaseBuilder {
+	private static SqlSessionFactory factory;
+	private static final String configLoc = "orm/MybatisConfig.xml";
+
+	public static Object getFactory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

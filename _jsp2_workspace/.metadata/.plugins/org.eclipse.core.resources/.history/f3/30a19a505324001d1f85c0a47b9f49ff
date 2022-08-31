@@ -1,0 +1,7 @@
+package repository;
+
+public class MemberDAOImpl implements MemberDao {
+	//DB와 연결되서 데이터를 처리
+	private SqlSession sql;
+	private final String NS = "MemberMapper.";
+}

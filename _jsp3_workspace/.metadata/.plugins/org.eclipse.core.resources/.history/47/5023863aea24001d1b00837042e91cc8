@@ -1,0 +1,26 @@
+package domain;
+
+public class MemberVO {
+		private String email;
+		private String pwd;
+		private String nick_name;
+		private String reg_at;
+		private String last_login;
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	/* create table member(
+		email varchar(100) not null,
+		pwd varchar(100) not null,
+		nick_name varchar(100) not null,
+		reg_at datetime default current_timestamp,
+		last_login datetime,
+	 * */
+}

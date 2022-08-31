@@ -1,0 +1,20 @@
+package domain;
+
+public class BoardVO {
+	private int bno;
+	private String title;
+	private String writer;
+	private String content;
+	private String reg_date;
+	
+	//기본생성자
+	public BoardVO() {}
+	
+	//각자 설정에 맞춘 생성자를 생성
+	//inset
+	public BoardVO(String title, String writer, String content) {
+		this.title = title;
+		this.writer = writer;
+		this.content = content;
+	}
+}

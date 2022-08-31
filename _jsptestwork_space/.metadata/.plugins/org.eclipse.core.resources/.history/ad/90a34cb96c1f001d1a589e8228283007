@@ -1,0 +1,11 @@
+package orm;
+
+public class DatabaseBuilder {
+	private static SqlSessionFactory factory;
+
+	public static Object getFactory() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}

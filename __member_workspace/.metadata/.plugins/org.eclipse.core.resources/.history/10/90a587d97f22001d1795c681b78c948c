@@ -1,0 +1,18 @@
+package service;
+
+import domain.MemberVO;
+
+public class MemberServiceImpl implements MemberService {
+	private MemberDAO mdao; //interface => repository에 생성
+	
+	public MemberServiceImpl() {
+		mado = new MemberServiceImpl();
+	}
+
+	@Override
+	public int register(MemberVO mvo) {
+		// dao에게 요청
+		return 0;
+	}
+
+}

@@ -1,0 +1,14 @@
+package controller;
+
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+@WebServlet("/brd/*")
+public class BoardContrller extends HttpServlet{
+	private static final long serialVersionUID = 1L;
+	//로그기록 파일
+	private static final Logger log = LoggerFactory.getLogger(BoardController.class);
+}

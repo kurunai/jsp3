@@ -1,0 +1,9 @@
+package domain;
+
+public class ProductVO {
+	private int pno;
+	private String pname;
+	private int price;
+	private String reg_date;
+	private String made_by;
+}

@@ -1,0 +1,5 @@
+package repository;
+
+public class MemberDAOImpl implements MemberDAO {
+	// DB와 연결되서 데이터를 처리
+}

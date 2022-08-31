@@ -1,0 +1,27 @@
+package controller;
+
+import javax.servlet.RequestDispatcher;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import service.BoardService;
+import service.BoardServiceImpl;
+
+@WebServlet("/brd/*")
+public class BoardController extends HttpServlet{
+	private static final long serialVersionUID = 1L;
+	//로그기록 파일
+	private static final Logger log = LoggerFactory.getLogger(BoardController.class);
+	private String destPage;	//목적지 위치 기록
+	private RequestDispatcher rdp;	//jsp에서 받은 요청을 처리하고, 다른 jsp로 결과를 보낸는 방식
+	private BoardService bsv;	//아직 미구현시 빨간 밑줄 : 앞으로 생성할 예정 (service폴더 interface 생성 -> 저장)
+	private int isUp;	//해당 구문이 잘 이루어졌는지 체크하기위한 값.
+	
+	//생성자
+	public BoardController() {
+		bsv = new BoardServiceImpl();	//bsv를 구현할 BoardServiceImpl 생성 -> 저장
+	}
+}

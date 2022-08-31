@@ -1,0 +1,22 @@
+package repository;
+
+import org.apache.ibatis.session.SqlSession;
+
+import domain.BoardVO;
+import orm.DatabaseBuilder;
+
+public class BoardDAOImpl implements BoardDAO {
+	// DB와 연결
+	private SqlSession sql;
+	
+	public BoardDAOImpl() {
+		new DatabaseBuilder(); // orm -> db연결 클래스
+	}
+
+	@Override
+	public int insert(BoardVO bvo) {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+}

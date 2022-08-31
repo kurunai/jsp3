@@ -1,0 +1,21 @@
+package domain;
+
+public class ProductVO {
+	private int pno;	//자동
+	private String pname;
+	private int price;
+	private String reg_date;	//자동
+	private String made_by;
+	
+	public ProductVO() {}
+	
+	//상품등록
+	
+	//상품리스트
+	
+	//상품수정
+	
+	//상품detail
+	
+	
+}
